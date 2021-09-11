@@ -7,10 +7,12 @@ title: useMount
 在组件挂载阶段执行。
 
 ## 使用示例
+
 ### 基本用法
+
 ```tsx
 import React, { useState, useCallback } from 'react';
-import { Button } from 'antd';
+import { Button, notification } from 'antd';
 import useMount from '../../src/hooks/useMount';
 
 export default () => {
@@ -22,7 +24,7 @@ export default () => {
 
   return (
     <div>
-      <Button onClick={handleClick}>
+      <Button type="primary" onClick={handleClick}>
         点击{isMount ? '卸载' : '挂载'} mount 组件
       </Button>
       {isMount && <MountComponent />}
@@ -32,13 +34,14 @@ export default () => {
 
 const MountComponent = () => {
   useMount(() => {
-    alert('mount 阶段被执行了')
+    notification.success({ message: 'mount 阶段被执行了' })
   })
   return <div>新组件挂载了</div>
 }
 ```
 
 ## API
+
 ```ts
 useMount(fn: () => void );
 ```
