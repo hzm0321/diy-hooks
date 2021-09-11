@@ -1,7 +1,9 @@
-import { useEffect, EffectCallback } from 'react';
+import useMount from '@/hooks/useMount';
+import useUnmount from '@/hooks/useUnmount';
 
-const useEffectOnce = (effect: EffectCallback) => {
-  useEffect(effect, []);
+const useEffectOnce = (mountFn: () => void, unMountFn: () => void) => {
+  useUnmount(unMountFn);
+  useMount(mountFn);
 };
 
 export default useEffectOnce;

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const useMount = (fn: () => void) => {
+const useMount = (fn: () => any) => {
   useEffect(() => {
     fn();
   }, []);
