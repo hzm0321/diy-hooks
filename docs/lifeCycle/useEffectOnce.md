@@ -15,11 +15,12 @@ title: useEffectOnce
 ## API
 
 ```ts
-useEffectOnce(effect: EffectCallback);
+useEffectOnce(mountFn: () => void, unMountFn:() => void);
 ```
 
 ### 参数
 
 | 参数 | 说明               | 类型         | 默认值 |
 |------|--------------------|--------------|--------|
-| effect   | useEffect 执行的函数 | `EffectCallback` | -      |
+| mountFn   | mount 时执行的函数 | `() => void` | -      |
+| unMountFn   | unmount 时执行的函数 | `() => void` | -      |
