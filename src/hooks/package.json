@@ -1,0 +1,20 @@
+{
+  "name": "diy-hooks",
+  "version": "1.0.0",
+  "description": "一个个人自定义 React Hooks 库。",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "hooks"
+  ],
+  "repository": "https://github.com/hzm0321/diy-hooks",
+  "homepage": "https://hzm0321.github.io/diy-hooks/",
+  "author": "hzm",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.8.6 || ^17.0"
+  }
+}
