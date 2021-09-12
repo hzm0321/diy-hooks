@@ -16,7 +16,7 @@ title: useCode
 ## API
 
 ```ts
-useCode(code: string, queryCode: (arg0: string) => any), refresh = false );
+const CodeList = useCode(code: string, queryCode: (arg0: string) => any), refresh = false );
 ```
 
 ### 参数
@@ -26,3 +26,8 @@ useCode(code: string, queryCode: (arg0: string) => any), refresh = false );
 | code   | 值集编码 | `string` | -      |
 | queryCode   | 查询值集的接口请求方法 | `(arg0: string) => any` | -      |
 | refresh   | 是否走缓存 | `boolean` | false      |
+
+### 返回值
+| 参数 | 说明               | 类型         | 默认值 |
+|------|--------------------|--------------|--------|
+| CodeList   | 值集列表 | `array` | `[]`      |
