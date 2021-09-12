@@ -7,10 +7,9 @@ group:
 ---
 
 # 简介
-本章主要收录与生命周期相关 hooks
+本章主要收录与 Hzero 项目业务开发中的相关 hooks
 
 ## 相关 hooks
-- `useEffectOnce` 在组件的挂载和卸载阶段只执行一次。
-- `useMount` 组件挂载阶段执行
-- `useUnMount` 组件卸载阶段执行
+- `useCode` 获取 Hzero 值集
 
+ 
