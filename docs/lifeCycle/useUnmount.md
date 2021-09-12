@@ -4,11 +4,9 @@ title: useUnmount
 
 # useUnmount
 
-在组件卸载阶段执行。
+在组件卸载阶段执行。  
 
 ## 使用示例
-
-### 基本用法
 
 <code src="../../src/hooks/useUnmount/demo/base" />
 

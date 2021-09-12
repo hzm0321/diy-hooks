@@ -2,13 +2,11 @@
 title: useEffectOnce
 ---
 
-#  useEffectOnce
+# useEffectOnce
 
 在组件的挂载和卸载阶段只执行一次。
 
 ## 使用示例
-
-### 基本用法
 
 <code src="../../src/hooks/useEffectOnce/demo/base" />
 

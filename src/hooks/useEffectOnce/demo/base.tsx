@@ -1,3 +1,7 @@
+/**
+ * title: 基本用法
+ * desc: 挂载阶段执行一次方法，卸载阶段会根据依赖`更新`方法，保证卸载方法`作用域最新`
+ */
 import React, { useCallback, useState } from 'react';
 import { Button, notification } from 'antd';
 import useEffectOnce from '../index';

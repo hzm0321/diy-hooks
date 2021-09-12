@@ -8,8 +8,6 @@ title: useMount
 
 ## 使用示例
 
-### 基本用法
-
 <code src="../../src/hooks/useMount/demo/base" />
 
 ## API

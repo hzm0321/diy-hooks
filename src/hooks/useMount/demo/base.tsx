@@ -1,3 +1,7 @@
+/**
+ * title: 基本用法
+ * desc: 仅在挂载阶段执行一次方法
+ */
 import React, { useState, useCallback } from 'react';
 import { Button, notification } from 'antd';
 import useMount from '../index';
