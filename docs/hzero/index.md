@@ -10,4 +10,4 @@ group:
 本章主要收录与 Hzero 项目业务开发中的相关 hooks
 
 ## 相关 hooks
-- `useCode` 获取 Hzero 值集
+- **[useCode](/life-cycle/use-code)** 获取 Hzero 值集
