@@ -1,7 +1,3 @@
----
-title: 使用指南
-order: 0
----
 <div align="center">
 <h1>diy-hooks</h1>
    <a href="https://www.npmjs.com/package/diy-hooks">
