@@ -12,4 +12,4 @@ group:
 
 ## 相关 hooks
 
-- **[useCode](/life-cycle/use-code)** 获取 Hzero 值集
+- **[useCode](/hzero/use-code)** 获取 Hzero 值集

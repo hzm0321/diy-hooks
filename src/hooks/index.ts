@@ -6,6 +6,9 @@ import useUpdate from './useUpdate';
 import useUpdateEffect from './useUpdateEffect';
 /** Hzero 相关 **/
 import useCode from './useCode';
+/** C7N UI 相关 **/
+import useDataSet from './useDataSet';
+import useDataSetIsSelected from './useDataSetIsSelected';
 
 export {
   useMount,
@@ -14,4 +17,6 @@ export {
   useUpdate,
   useUpdateEffect,
   useCode,
+  useDataSet,
+  useDataSetIsSelected,
 };

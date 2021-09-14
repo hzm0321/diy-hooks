@@ -2,7 +2,7 @@
 title: 简介
 order: 0
 group:
-  title: C7N
+  title: C7N UI
   order: 3
 ---
 
@@ -12,4 +12,5 @@ group:
 
 ## 相关 hooks
 
-- **[useDataSet](/life-cycle/use-code)** 初始化 `DataSet`
+- **[useDataSet](/c7n/use-data-set)** 初始化 `DataSet`
+- **[useDataSetIsSelected](/c7n/use-data-set-is-selected)** `DataSet` 中是否选中了数据

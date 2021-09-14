@@ -1,6 +1,6 @@
 {
   "name": "diy-hooks",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "一个个人自定义 React Hooks 库。",
   "main": "./lib/index.js",
   "module": "./es/index.js",
@@ -28,6 +28,7 @@
   "license": "ISC",
   "peerDependencies": {
     "choerodon-ui": "^1.3.0",
+    "mobx": "^4.7.0",
     "react": "^16.8.6 || ^17.0"
   },
   "devDependencies": {
