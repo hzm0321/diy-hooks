@@ -1,5 +1,7 @@
 ---
 title: useDataSetIsSelected
+group:
+  title: C7N UI
 ---
 
 # useDataSetIsSelected
@@ -8,7 +10,7 @@ title: useDataSetIsSelected
 
 ## 使用示例
 
-<code src="../../src/hooks/useDataSetIsSelected/demo/base" />
+<code src="../../src/hooks/src/useDataSetIsSelected/demo/base" />
 
 ## API
 

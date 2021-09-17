@@ -4,21 +4,21 @@
  */
 import React, { useState, useCallback } from 'react';
 import { Button, notification } from 'antd';
-import useMount from '../index';
+import { useMount } from 'diy-hooks';
 
 const MountComponent = () => {
   useMount(() => {
-    notification.success({ message: 'mount 阶段被执行了' })
-  })
-  return <div>新组件挂载了</div>
-}
+    notification.success({ message: 'mount 阶段被执行了' });
+  });
+  return <div>新组件挂载了</div>;
+};
 
 export default () => {
   const [isMount, setIsMount] = useState(false);
 
   const handleClick = useCallback(() => {
-    setIsMount(v => !v)
-  }, [isMount])
+    setIsMount((v) => !v);
+  }, [isMount]);
 
   return (
     <div>
@@ -27,7 +27,5 @@ export default () => {
       </Button>
       {isMount && <MountComponent />}
     </div>
-  )
+  );
 };
-
-

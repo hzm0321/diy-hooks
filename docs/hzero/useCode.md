@@ -1,5 +1,7 @@
 ---
 title: useCode
+group:
+  title: Hzero
 ---
 
 # useCode
@@ -10,9 +12,9 @@ title: useCode
 
 ## 使用示例
 
-<code src="../../src/hooks/useCode/demo/base" />
+<code src="../../src/hooks/src/useCode/demo/base" />
 
-<code src="../../src/hooks/useCode/demo/mean" />
+<code src="../../src/hooks/src/useCode/demo/mean" />
 
 ## API
 

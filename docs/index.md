@@ -33,7 +33,7 @@ $ npm install diy-hooks
 
 ## 简单使用
 
-```ts
+```tsx | pure
 import React from 'react';
 import { useMount } from 'diy-hooks';
 

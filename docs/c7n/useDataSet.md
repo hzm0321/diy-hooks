@@ -1,5 +1,7 @@
 ---
 title: useDataSet
+group:
+  title: C7N UI
 ---
 
 # useDataSet
@@ -8,9 +10,9 @@ title: useDataSet
 
 ## 使用示例
 
-<code src="../../src/hooks/useDataSet/demo/base" />
+<code src="../../src/hooks/src/useDataSet/demo/base" />
 
-<code src="../../src/hooks/useDataSet/demo/cache" />
+<code src="../../src/hooks/src/useDataSet/demo/cache" />
 
 ## API
 

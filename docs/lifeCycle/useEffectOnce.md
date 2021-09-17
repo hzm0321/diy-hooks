@@ -1,5 +1,7 @@
 ---
 title: useEffectOnce
+group:
+  title: 生命周期
 ---
 
 # useEffectOnce
@@ -8,7 +10,7 @@ title: useEffectOnce
 
 ## 使用示例
 
-<code src="../../src/hooks/useEffectOnce/demo/base" />
+<code src="../../src/hooks/src/useEffectOnce/demo/base" />
 
 ## API
 
@@ -18,7 +20,7 @@ useEffectOnce(mountFn: () => void, unMountFn:() => void);
 
 ### 参数
 
-| 参数 | 说明               | 类型         | 默认值 |
-|------|--------------------|--------------|--------|
-| mountFn   | mount 时执行的函数 | `() => void` | -      |
-| unMountFn   | unmount 时执行的函数 | `() => void` | -      |
+| 参数      | 说明                 | 类型         | 默认值 |
+| --------- | -------------------- | ------------ | ------ |
+| mountFn   | mount 时执行的函数   | `() => void` | -      |
+| unMountFn | unmount 时执行的函数 | `() => void` | -      |

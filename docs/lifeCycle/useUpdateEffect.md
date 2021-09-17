@@ -1,5 +1,7 @@
 ---
 title: useUpdateEffect
+group:
+  title: 生命周期
 ---
 
 # useUpdateEffect
@@ -8,7 +10,7 @@ title: useUpdateEffect
 
 ## 使用示例
 
-<code src="../../src/hooks/useUpdateEffect/demo/base" />
+<code src="../../src/hooks/src/useUpdateEffect/demo/base" />
 
 ## API
 

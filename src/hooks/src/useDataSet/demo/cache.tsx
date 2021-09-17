@@ -7,8 +7,7 @@ import { DataSet, Table, Button } from 'choerodon-ui/pro';
 import { message } from 'choerodon-ui';
 import { FieldType } from 'choerodon-ui/pro/lib/data-set/enum';
 import { ButtonColor } from 'choerodon-ui/pro/lib/button/enum';
-
-import useDataSet from '../index';
+import { useDataSet } from 'diy-hooks';
 
 const tempTableData = [
   {

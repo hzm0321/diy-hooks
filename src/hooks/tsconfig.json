@@ -1,8 +1,6 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "rootDir": "./",
-    "declaration": true,
-    "declarationDir": "./lib/types", // 定义文件输出目录
+    "rootDir": "src"
   }
 }

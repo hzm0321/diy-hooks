@@ -5,8 +5,7 @@
 import React, { useMemo } from 'react';
 import { DataSet, Table } from 'choerodon-ui/pro';
 import { FieldType } from 'choerodon-ui/pro/lib/data-set/enum';
-
-import useDataSet from '../index';
+import { useDataSet } from 'diy-hooks';
 
 const tempTableData = [
   {

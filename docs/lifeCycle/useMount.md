@@ -1,5 +1,7 @@
 ---
 title: useMount
+group:
+  title: 生命周期
 ---
 
 # useMount
@@ -8,7 +10,7 @@ title: useMount
 
 ## 使用示例
 
-<code src="../../src/hooks/useMount/demo/base" />
+<code src="../../src/hooks/src/useMount/demo/base" />
 
 ## API
 
@@ -19,5 +21,5 @@ useMount(fn: () => void );
 ### 参数
 
 | 参数 | 说明               | 类型         | 默认值 |
-|------|--------------------|--------------|--------|
+| ---- | ------------------ | ------------ | ------ |
 | fn   | mount 时执行的函数 | `() => void` | -      |

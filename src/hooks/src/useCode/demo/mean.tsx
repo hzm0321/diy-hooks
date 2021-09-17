@@ -4,8 +4,7 @@
  */
 import React, { useState } from 'react';
 import { Button, Spin } from 'antd';
-
-import useCode from '../index';
+import { useCode } from 'diy-hooks';
 
 type LovCodeType = {
   value: string;
@@ -68,10 +67,12 @@ export default () => {
 
   return (
     <div>
-      {isShow &&  <QueryComponent />}
+      {isShow && <QueryComponent />}
       <div>
-        <Button type='primary' onClick={() => setIsShow(v => !v)}>请求含值集组件</Button>
+        <Button type="primary" onClick={() => setIsShow((v) => !v)}>
+          请求含值集组件
+        </Button>
       </div>
     </div>
   );
-}
+};

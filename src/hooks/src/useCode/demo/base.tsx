@@ -4,8 +4,7 @@
  */
 import React, { useState } from 'react';
 import { Button, Spin } from 'antd';
-
-import useCode from '../index';
+import { useCode } from 'diy-hooks';
 
 type LovCodeType = {
   value: string;
@@ -50,15 +49,19 @@ export default () => {
   const [count, setCount] = useState(0);
 
   const handleAddCode = () => {
-    setCount(v => v + 1);
+    setCount((v) => v + 1);
   };
 
   return (
     <div>
-      {
-        new Array(count).fill(1).map((_, index) => (<QueryComponent key={index} />))
-      }
-      <div><Button type='primary' onClick={handleAddCode}>请求一次值集</Button></div>
+      {new Array(count).fill(1).map((_, index) => (
+        <QueryComponent key={index} />
+      ))}
+      <div>
+        <Button type="primary" onClick={handleAddCode}>
+          请求一次值集
+        </Button>
+      </div>
     </div>
   );
-}
+};

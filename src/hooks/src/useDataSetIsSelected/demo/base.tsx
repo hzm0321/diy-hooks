@@ -6,9 +6,7 @@ import React, { useMemo } from 'react';
 import { DataSet, Table, Button } from 'choerodon-ui/pro';
 import { FieldType } from 'choerodon-ui/pro/lib/data-set/enum';
 import { ButtonColor } from 'choerodon-ui/pro/lib/button/enum';
-
-import useDataSet from '../../useDataSet';
-import useDataSetIsSelected from '../index';
+import { useDataSet, useDataSetIsSelected } from 'diy-hooks';
 
 const tempTableData = [
   {
