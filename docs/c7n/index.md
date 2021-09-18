@@ -14,3 +14,4 @@ group:
 
 - **[useDataSet](/c7n/use-data-set)** 初始化 `DataSet`
 - **[useDataSetIsSelected](/c7n/use-data-set-is-selected)** `DataSet` 中是否选中了数据
+- **[useDataSetEvents](/c7n/use-data-set-events)** 批量监听 `DataSet Events` 的 hook。

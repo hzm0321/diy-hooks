@@ -9,6 +9,7 @@ import useCode from './useCode';
 /** C7N UI 相关 **/
 import useDataSet from './useDataSet';
 import useDataSetIsSelected from './useDataSetIsSelected';
+import useDataSetEvents from './useDataSetEvents';
 
 export {
   useMount,
@@ -19,4 +20,5 @@ export {
   useCode,
   useDataSet,
   useDataSetIsSelected,
+  useDataSetEvents,
 };
