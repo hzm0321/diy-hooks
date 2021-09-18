@@ -62,3 +62,7 @@ export default () => {
 如有疑问，请联系作者。  
 QQ：**934585316**  
 微信：**hzm0321hzm**
+
+## 国内镜像
+
+如果文档页面访问过慢，可以访问国内镜像站点[http://hzm0321.gitee.io/diy-hooks/](http://hzm0321.gitee.io/diy-hooks/)
