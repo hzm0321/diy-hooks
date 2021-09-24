@@ -4,6 +4,8 @@ import useUnmount from './hooks/src/useUnmount';
 import useEffectOnce from './hooks/src/useEffectOnce';
 import useUpdate from './hooks/src/useUpdate';
 import useUpdateEffect from './hooks/src/useUpdateEffect';
+/** state 相关 **/
+import useArray from './hooks/src/useArray';
 /** Hzero 相关 **/
 import useCode from './hooks/src/useCode';
 /** C7N UI 相关 **/
@@ -21,4 +23,5 @@ export {
   useDataSet,
   useDataSetIsSelected,
   useDataSetEvents,
+  useArray,
 };

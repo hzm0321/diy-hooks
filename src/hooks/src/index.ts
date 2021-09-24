@@ -4,6 +4,8 @@ import useUnmount from './useUnmount';
 import useEffectOnce from './useEffectOnce';
 import useUpdate from './useUpdate';
 import useUpdateEffect from './useUpdateEffect';
+/** state 相关 **/
+import useArray from './useArray';
 /** Hzero 相关 **/
 import useCode from './useCode';
 /** C7N UI 相关 **/
@@ -21,4 +23,5 @@ export {
   useDataSet,
   useDataSetIsSelected,
   useDataSetEvents,
+  useArray,
 };

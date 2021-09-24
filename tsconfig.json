@@ -12,6 +12,7 @@
     "paths": {
       "@/*": ["src/*"]
     },
+    "lib": ["es2018", "dom"],
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "declaration": false,
