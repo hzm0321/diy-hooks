@@ -1,7 +1,7 @@
 {
   "name": "diy-hooks",
-  "version": "1.0.8",
-  "description": "一个个人自定义 React Hooks 库。",
+  "version": "1.0.9",
+  "description": "一个自定义 React Hooks 库。",
   "main": "./lib/index.js",
   "module": "./es/index.js",
   "types": "./lib/index.d.ts",
