@@ -8,8 +8,8 @@ export default defineConfig({
     includes: ['docs'],
   },
   title: 'diy-hooks',
-  favicon: '/logo.svg',
-  logo: '/logo.svg',
+  favicon: '/logo.png',
+  logo: '/logo.png',
   outputPath: 'docs-dist',
   styles: [`.icon-link:before{content: '' !important;}`], // 强制覆盖 c7n icon 中 icon-link 样式
   extraBabelPlugins: [
