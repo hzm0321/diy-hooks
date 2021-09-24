@@ -61,3 +61,9 @@ QQ：**934585316**
 ## 国内镜像
 
 如果文档页面访问过慢，可以访问国内镜像站点[http://hzm0321.gitee.io/diy-hooks/](http://hzm0321.gitee.io/diy-hooks/)
+
+## 学习
+
+如果你也想从零开始构建一个像 `diy-hooks` 这样的 React Hooks 库，可以参考我的系列文章:
+
+- [从零开始构建一个属于自己的 React Hooks 库（一）](https://blog.csdn.net/PingMinWangZi/article/details/120237564)

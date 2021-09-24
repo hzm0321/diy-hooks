@@ -33,7 +33,7 @@ $ npm install diy-hooks
 
 ## 简单使用
 
-```tsx | pure
+```ts
 import React from 'react';
 import { useMount } from 'diy-hooks';
 
@@ -58,7 +58,7 @@ export default () => {
 ## 文档阅读说明
 
 项目的文档库基于 [dumi](https://d.umijs.org/zh-CN) 搭建，并通过 [Github Pages](https://pages.github.com/) 部署在 [https://hzm0321.github.io/diy-hooks/](https://hzm0321.github.io/diy-hooks/) 。  
-可根据 hooks 类型分组，阅读此文档。每个分组都有一篇`简介`说明该分组下说包含的 hooks 概要，可据此查找对应 hook。  
+可根据 hooks 类型分组，阅读此文档。每个分组都有一篇`简介`说明该分组下说包含的 hooks 概要，可据此查找对应 hook。
 如有疑问，请联系作者。  
 QQ：**934585316**  
 微信：**hzm0321hzm**
@@ -66,3 +66,9 @@ QQ：**934585316**
 ## 国内镜像
 
 如果文档页面访问过慢，可以访问国内镜像站点[http://hzm0321.gitee.io/diy-hooks/](http://hzm0321.gitee.io/diy-hooks/)
+
+## 学习
+
+如果你也想从零开始构建一个像 `diy-hooks` 这样的 React Hooks 库，可以参考我的系列文章:
+
+- [从零开始构建一个属于自己的 React Hooks 库（一）](https://blog.csdn.net/PingMinWangZi/article/details/120237564)
