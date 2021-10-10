@@ -29,7 +29,8 @@
   "peerDependencies": {
     "choerodon-ui": "^1.3.0",
     "mobx": "^4.7.0",
-    "react": "^16.8.6 || ^17.0"
+    "react": "^16.8.6 || ^17.0",
+    "axios": "*"
   },
   "devDependencies": {
     "babel-plugin-external-helpers": "^6.22.0",

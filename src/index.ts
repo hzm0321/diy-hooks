@@ -12,6 +12,8 @@ import useCode from './hooks/src/useCode';
 import useDataSet from './hooks/src/useDataSet';
 import useDataSetIsSelected from './hooks/src/useDataSetIsSelected';
 import useDataSetEvents from './hooks/src/useDataSetEvents';
+/** 业务场景 **/
+import useTodayPoetry from './hooks/src/useTodayPoetry';
 
 export {
   useMount,
@@ -24,4 +26,5 @@ export {
   useDataSetIsSelected,
   useDataSetEvents,
   useArray,
+  useTodayPoetry,
 };

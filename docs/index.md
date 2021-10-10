@@ -8,10 +8,10 @@ order: 0
    <a href="https://www.npmjs.com/package/diy-hooks">
       <img src="https://img.shields.io/npm/v/diy-hooks.svg" alt="npm package" />
    </a>
-   <a href="https://www.npmjs.com/package/react-use">
+   <a href="https://www.npmjs.com/package/diy-hooks">
       <img src="https://img.shields.io/npm/dm/diy-hooks.svg" alt="npm downloads" />
    </a>
-   <a href="https://www.npmjs.com/package/react-use">
+   <a href="https://www.npmjs.com/package/diy-hooks">
       <img src="https://img.shields.io/bundlephobia/min/diy-hooks.svg" alt="npm downloads" />
    </a>
    <a href="https://github.com/hzm0321/diy-hooks">
