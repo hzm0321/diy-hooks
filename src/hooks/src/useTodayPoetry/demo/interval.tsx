@@ -61,6 +61,7 @@ export default () => {
         </Button>
       </div>
       <div className={styles.inputNumber}>
+        自动更新时长（单位/毫秒）：
         <InputNumber
           style={{ width: '300px' }}
           defaultValue={defaultValue}
