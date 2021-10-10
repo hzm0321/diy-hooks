@@ -9,36 +9,36 @@ import * as path from 'path';
 
 const pathResolve = (...args) => path.resolve(...args);
 
-export default [{
-  input: './index.ts',
-  output: [
-    {
-      file: pathResolve('./', pkg.main),
-      format: 'amd',
-    },
-    {
-      file: pathResolve('./', pkg.module),
-      format: 'es',
-    },
-
-  ],
-  plugins: [
-    resolve({
-      customResolveOptions: {
-        moduleDirectory: '/node_modules',
+export default [
+  {
+    input: './src/index.ts',
+    output: [
+      {
+        file: pathResolve('./', pkg.main),
+        format: 'amd',
       },
-    }),
-    json(),
-    babel({
-      exclude: 'node_modules/**', // 只转译我们的源代码
-    }),
-    commonjs(),
-    typescript(),
-  ],
-},
+      {
+        file: pathResolve('./', pkg.module),
+        format: 'es',
+      },
+    ],
+    plugins: [
+      resolve({
+        customResolveOptions: {
+          moduleDirectory: '/node_modules',
+        },
+      }),
+      json(),
+      babel({
+        exclude: 'node_modules/**', // 只转译我们的源代码
+      }),
+      commonjs(),
+      typescript(),
+    ],
+  },
   {
     // 生成 .d.ts 类型声明文件
-    input: './index.ts',
+    input: './src/index.ts',
     output: [
       {
         file: pathResolve('./', pkg.types),

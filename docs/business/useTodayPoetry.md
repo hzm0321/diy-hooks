@@ -18,7 +18,7 @@ group:
 ## API
 
 ```ts
-const { content, tags, origin, loading, update, allData } = useTodayPoetry();
+const { content, tags, origin, loading, update, allData } = useTodayPoetry(intervalTime?:number);
 ```
 
 ### 参数
