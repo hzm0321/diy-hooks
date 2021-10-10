@@ -2,7 +2,7 @@
  * title: 基本用法
  * desc: 获取一次诗词
  */
-import React, { useState, useCallback } from 'react';
+import React from 'react';
 import { Button, Tag, Tooltip } from 'antd';
 import { useTodayPoetry } from 'diy-hooks';
 import styles from './base.less';
@@ -26,15 +26,15 @@ export default () => {
 
   return (
     <div>
-      <Tooltip title={renderTooltip} color="blue">
+      <Tooltip title={renderTooltip} color="blue" placement="right">
         <span>
-          <h3>{content}</h3>
+          <h2>{content}</h2>
         </span>
       </Tooltip>
       {tags.map((tag) => (
         <Tag color="blue">{tag}</Tag>
       ))}
-      <div>
+      <div className={styles.operation}>
         <Button
           type="primary"
           ghost

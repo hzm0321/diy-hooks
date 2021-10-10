@@ -22,10 +22,10 @@ const dataSet = useDataSet(dataSetFactory: () => DataSet, cacheKey?: string );
 
 ### 参数
 
-| 参数           | 说明              | 类型            | 默认值 |
-| -------------- | ----------------- | --------------- | ------ |
-| dataSetFactory | 生成 DataSet 实例 | `() => DataSet` | -      |
-| cacheKey       | 缓存的 key 值     | `string`        | -      |
+| 参数             | 说明              | 类型            | 默认值 |
+| ---------------- | ----------------- | --------------- | ------ |
+| dataSetFactory   | 生成 DataSet 实例 | `() => DataSet` | -      |
+| cacheKey（可选） | 缓存的 key 值     | `string`        | -      |
 
 ### 返回值
 

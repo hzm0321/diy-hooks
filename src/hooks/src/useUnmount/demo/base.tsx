@@ -3,7 +3,7 @@
  * desc: 卸载阶段会根据依赖`更新`方法，保证卸载方法`作用域最新`
  */
 import React, { useState, useCallback } from 'react';
-import { Button, notification } from 'antd';
+import { Button, message } from 'antd';
 import { useUnmount } from 'diy-hooks';
 
 const UnmountComponent = () => {
@@ -11,7 +11,7 @@ const UnmountComponent = () => {
 
   const fn = useCallback(() => {
     // 卸载时打印最新的 count
-    notification.success({ message: count });
+    message.success(count);
   }, [count]);
 
   useUnmount(fn);

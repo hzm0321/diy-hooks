@@ -7,7 +7,7 @@
       <img src="https://img.shields.io/npm/dm/diy-hooks.svg" alt="npm downloads" />
    </a>
    <a href="https://www.npmjs.com/package/diy-hooks">
-      <img src="https://img.shields.io/bundlephobia/min/diy-hooks.svg" alt="npm downloads" />
+      <img src="https://img.shields.io/npm/l/diy-hooks.svg" alt="npm downloads" />
    </a>
    <a href="https://github.com/hzm0321/diy-hooks">
       <img src="https://img.shields.io/github/stars/hzm0321/diy-hooks?style=social" alt="npm downloads" />

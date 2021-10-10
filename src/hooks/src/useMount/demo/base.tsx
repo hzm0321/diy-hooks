@@ -3,12 +3,12 @@
  * desc: 仅在挂载阶段执行一次方法
  */
 import React, { useState, useCallback } from 'react';
-import { Button, notification } from 'antd';
+import { Button, message } from 'antd';
 import { useMount } from 'diy-hooks';
 
 const MountComponent = () => {
   useMount(() => {
-    notification.success({ message: 'mount 阶段被执行了' });
+    message.success('mount 阶段被执行了');
   });
   return <div>新组件挂载了</div>;
 };

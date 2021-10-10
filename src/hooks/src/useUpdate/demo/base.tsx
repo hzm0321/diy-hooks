@@ -1,6 +1,6 @@
 /**
  * title: 基本用法
- * desc: 调用 useUpdate 返回的 update 方法，强刷页面
+ * desc: 调用 `useUpdate` 返回的 `update` 方法，强刷页面
  */
 import React, { useCallback } from 'react';
 import { Button } from 'antd';

@@ -15,12 +15,12 @@ group:
 ## API
 
 ```ts
-useEffectOnce(mountFn: () => void, unMountFn:() => void);
+useEffectOnce(mountFn？: () => void, unMountFn？:() => void);
 ```
 
 ### 参数
 
-| 参数      | 说明                 | 类型         | 默认值 |
-| --------- | -------------------- | ------------ | ------ |
-| mountFn   | mount 时执行的函数   | `() => void` | -      |
-| unMountFn | unmount 时执行的函数 | `() => void` | -      |
+| 参数              | 说明                 | 类型         | 默认值 |
+| ----------------- | -------------------- | ------------ | ------ |
+| mountFn（可选）   | mount 时执行的函数   | `() => void` | -      |
+| unMountFn（可选） | unmount 时执行的函数 | `() => void` | -      |

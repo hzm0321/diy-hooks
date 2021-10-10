@@ -1,13 +1,14 @@
 import { useCallback, useEffect, useState } from 'react';
-import axios from 'axios';
+import * as jinrishici from 'jinrishici';
+import { isNumber } from 'lodash';
 
 export type PoetryType = {
   content: string;
   matchTags: string[];
-  origin: {};
+  origin: any;
 };
 
-const useTodayPoetry = () => {
+const useTodayPoetry = (intervalTime?: number) => {
   const [poetryData, setPoetryData] = useState<PoetryType>({
     content: '',
     matchTags: [],
@@ -16,17 +17,32 @@ const useTodayPoetry = () => {
   const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
+    let timer;
     init();
-  }, []);
+    if (isNumber(intervalTime) && intervalTime > 0) {
+      timer = setInterval(() => {
+        init();
+      }, intervalTime);
+    }
+    return () => {
+      clearInterval(timer);
+    };
+  }, [intervalTime]);
 
   const init = useCallback(() => {
     setLoading(true);
-    axios.get('https://v2.jinrishici.com/one.json').then((res) => {
-      setLoading(false);
-      if (res.status === 200 && res.data.status === 'success') {
-        setPoetryData(res.data.data as PoetryType);
-      }
-    });
+    jinrishici.load(
+      (result) => {
+        setLoading(false);
+        if (result.status === 'success') {
+          setPoetryData(result.data);
+        }
+      },
+      (errData) => {
+        setLoading(false);
+        console.error(errData);
+      },
+    );
   }, []);
 
   return {

@@ -19,7 +19,7 @@ const memorizedCode = async (
 const useCode = (
   code: string,
   queryCode: (arg0: string) => any,
-  refresh = false,
+  refresh?: boolean,
 ) => {
   const [data, setData] = useState([]);
   useEffect(() => {

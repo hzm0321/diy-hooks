@@ -1,6 +1,6 @@
 /**
  * title: 基本用法
- * desc: 仅在依赖更新时才会执行 effect
+ * desc: 仅在依赖`更新`时才会执行 effect
  */
 import React, { useState } from 'react';
 import { Button } from 'antd';

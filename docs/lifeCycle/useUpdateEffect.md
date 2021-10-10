@@ -18,9 +18,9 @@ group:
 useUpdateEffect(effect: EffectCallback, deps?: DependencyList);
 ```
 
-### 返回值
+### 参数
 
-| 参数   | 说明                    | 类型             | 默认值 |
-| ------ | ----------------------- | ---------------- | ------ |
-| effect | useEffect 接收的 effect | `EffectCallback` | -      |
-| deps   | hook 更新所需要的依赖项 | `DependencyList` | -      |
+| 参数         | 说明                    | 类型             | 默认值 |
+| ------------ | ----------------------- | ---------------- | ------ |
+| effect       | useEffect 接收的 effect | `EffectCallback` | -      |
+| deps（可选） | hook 更新所需要的依赖项 | `DependencyList` | -      |

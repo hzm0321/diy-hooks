@@ -1,6 +1,6 @@
 /**
  * title: 与取值方法结合
- * desc: useCode 结合 getCodeMeaning 方法展示值集
+ * desc: useCode 结合 `getCodeMeaning` 方法展示值集
  */
 import React, { useState } from 'react';
 import { Button, Spin } from 'antd';
