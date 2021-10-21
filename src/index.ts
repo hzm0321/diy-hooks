@@ -4,6 +4,7 @@ import useUnmount from './hooks/src/useUnmount';
 import useEffectOnce from './hooks/src/useEffectOnce';
 import useUpdate from './hooks/src/useUpdate';
 import useUpdateEffect from './hooks/src/useUpdateEffect';
+import useDeepEffect from './hooks/src/useDeepEffect';
 /** state 相关 **/
 import useArray from './hooks/src/useArray';
 /** Hzero 相关 **/
@@ -27,4 +28,5 @@ export {
   useDataSetEvents,
   useArray,
   useTodayPoetry,
+  useDeepEffect,
 };

@@ -4,6 +4,7 @@ import useUnmount from './useUnmount';
 import useEffectOnce from './useEffectOnce';
 import useUpdate from './useUpdate';
 import useUpdateEffect from './useUpdateEffect';
+import useDeepEffect from './useDeepEffect';
 /** state 相关 **/
 import useArray from './useArray';
 /** Hzero 相关 **/
@@ -27,4 +28,5 @@ export {
   useDataSetEvents,
   useArray,
   useTodayPoetry,
+  useDeepEffect,
 };

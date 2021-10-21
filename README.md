@@ -48,7 +48,7 @@ export default () => {
 ## 按需加载
 
 `diy-hooks` 默认支持基于 ES module 的 tree shaking。  
-直接写成 `import { useToggle } from 'ahooks'` 就有按需加载效果。
+直接写成 `import { useMount } from 'diy-hooks'` 就有按需加载效果。
 
 ## 文档阅读说明
 
