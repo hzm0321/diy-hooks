@@ -10,7 +10,7 @@
     "deploy": "npm run docs:build && npm run docs:deploy",
     "release": "npm run build && npm publish",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
-    "test": "umi-test",
+    "test": "jest",
     "test:coverage": "umi-test --coverage"
   },
   "main": "dist/index.js",
@@ -34,6 +34,8 @@
     "tslib": "^2.3.1"
   },
   "devDependencies": {
+    "@testing-library/react-hooks": "^7.0.2",
+    "@types/jest": "^27.0.2",
     "@types/lodash": "^4.14.172",
     "@umijs/test": "^3.0.5",
     "antd": "^4.16.13",
@@ -43,12 +45,14 @@
     "dumi": "^1.1.30",
     "father-build": "^1.17.2",
     "gh-pages": "^3.0.0",
+    "jest": "^27.3.1",
     "lint-staged": "^10.0.7",
     "lodash": "^4.17.21",
     "mobx": "4.7.0",
     "mobx-react": "6.1.5",
     "mobx-react-lite": "1.5.2",
     "prettier": "^2.2.1",
+    "ts-jest": "^27.0.7",
     "yorkie": "^2.0.0"
   }
 }
