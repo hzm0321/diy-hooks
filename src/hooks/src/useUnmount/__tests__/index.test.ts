@@ -22,4 +22,15 @@ describe('useUnmount', () => {
     unmount();
     expect(fn).toBeCalledTimes(1);
   });
+
+  it('卸载时函数引用是新的', () => {
+    const newFn = jest.fn();
+    const { rerender, unmount } = renderHook(({ fn }) => useUnmount(fn), {
+      initialProps: { fn },
+    });
+    rerender({ fn: newFn });
+    unmount();
+    expect(fn).toBeCalledTimes(0);
+    expect(newFn).toBeCalledTimes(1);
+  });
 });
