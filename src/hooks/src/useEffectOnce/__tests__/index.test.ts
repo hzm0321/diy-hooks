@@ -40,4 +40,14 @@ describe('useEffectOnce', () => {
     expect(unMountFn).toBeCalledTimes(0);
     expect(newUnmountFn).toBeCalledTimes(1);
   });
+
+  it('mount 传入非函数参数,不会被执行', () => {
+    const { result } = renderHook(() => useEffectOnce(undefined, unMountFn));
+    expect(result.error).toEqual(Error('mount need to receive a function'));
+  });
+
+  it('unMount 传入非函数参数,不会被执行', () => {
+    const { result } = renderHook(() => useEffectOnce(mountFn, undefined));
+    expect(result.error).toEqual(Error('unMount need to receive a function'));
+  });
 });
