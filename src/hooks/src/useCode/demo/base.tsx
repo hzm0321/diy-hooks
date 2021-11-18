@@ -41,7 +41,7 @@ const QueryComponent = () => {
     });
   };
 
-  const CodeData = useCode('HZM', queryCodeDemo);
+  const CodeData = useCode('HZM', queryCodeDemo, true);
   return <Spin spinning={CodeData.length < 1}>{JSON.stringify(CodeData)}</Spin>;
 };
 
