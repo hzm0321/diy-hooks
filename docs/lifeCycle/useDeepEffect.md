@@ -12,6 +12,8 @@ group:
 
 <code src="../../src/hooks/src/useDeepEffect/demo/base" />
 
+<code src="../../src/hooks/src/useDeepEffect/demo/props" />
+
 ## API
 
 ```ts
