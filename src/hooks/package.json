@@ -1,6 +1,6 @@
 {
   "name": "diy-hooks",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "一个自定义 React Hooks 库。",
   "main": "./lib/index.js",
   "module": "./es/index.js",
@@ -40,7 +40,7 @@
     "rollup-plugin-dts": "^4.0.0",
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-typescript": "^1.0.1"
+    "rollup-plugin-typescript2": "^0.31.0"
   },
   "dependencies": {
     "jinrishici": "^1.0.6",

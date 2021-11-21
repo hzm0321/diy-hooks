@@ -15,6 +15,8 @@ import useDataSetIsSelected from './useDataSetIsSelected';
 import useDataSetEvents from './useDataSetEvents';
 /** 业务场景 **/
 import useTodayPoetry from './useTodayPoetry';
+/** 工具方法 **/
+import { makeStore } from './utils/store';
 
 export {
   useMount,
@@ -29,4 +31,5 @@ export {
   useArray,
   useTodayPoetry,
   useDeepEffect,
+  makeStore,
 };

@@ -15,6 +15,8 @@ import useDataSetIsSelected from './hooks/src/useDataSetIsSelected';
 import useDataSetEvents from './hooks/src/useDataSetEvents';
 /** 业务场景 **/
 import useTodayPoetry from './hooks/src/useTodayPoetry';
+/** 工具方法 **/
+import { makeStore } from './hooks/src/utils/store';
 
 export {
   useMount,
@@ -29,4 +31,5 @@ export {
   useArray,
   useTodayPoetry,
   useDeepEffect,
+  makeStore,
 };
