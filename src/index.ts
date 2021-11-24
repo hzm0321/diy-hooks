@@ -9,6 +9,7 @@ import useDeepEffect from './hooks/src/useDeepEffect';
 import useArray from './hooks/src/useArray';
 /** Hzero 相关 **/
 import useCode from './hooks/src/useCode';
+import useHzeroRequest from './hooks/src/useHzeroRequest';
 /** C7N UI 相关 **/
 import useDataSet from './hooks/src/useDataSet';
 import useDataSetIsSelected from './hooks/src/useDataSetIsSelected';
@@ -31,5 +32,6 @@ export {
   useArray,
   useTodayPoetry,
   useDeepEffect,
+  useHzeroRequest,
   makeStore,
 };

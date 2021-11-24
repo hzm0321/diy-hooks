@@ -92,8 +92,7 @@ function Change() {
       type="primary"
       onClick={() => dispatch({ type: 'change', name: 'diy-hooks' })}
     >
-      {' '}
-      change{' '}
+      change
     </Button>
   );
 }

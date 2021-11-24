@@ -43,6 +43,7 @@
     "rollup-plugin-typescript2": "^0.31.0"
   },
   "dependencies": {
+    "@ahooksjs/use-request": "^2.8.13",
     "jinrishici": "^1.0.6",
     "lodash": "^4.17.21",
     "react-fast-compare": "^3.2.0"
