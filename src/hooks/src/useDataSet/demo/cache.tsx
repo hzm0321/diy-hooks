@@ -61,6 +61,7 @@ const Component = () => {
           };
         })(),
       ),
+    [],
     'table',
   ); // 设置缓存 key 为 table
 

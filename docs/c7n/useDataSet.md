@@ -17,15 +17,16 @@ group:
 ## API
 
 ```ts
-const dataSet = useDataSet(dataSetFactory: () => DataSet, cacheKey?: string );
+const dataSet = useDataSet(dataSetFactory: () => DataSet, deps?: DependencyList, cacheKey?: string );
 ```
 
 ### 参数
 
-| 参数             | 说明              | 类型            | 默认值 |
-| ---------------- | ----------------- | --------------- | ------ |
-| dataSetFactory   | 生成 DataSet 实例 | `() => DataSet` | -      |
-| cacheKey（可选） | 缓存的 key 值     | `string`        | -      |
+| 参数             | 说明                    | 类型             | 默认值 |
+| ---------------- | ----------------------- | ---------------- | ------ |
+| dataSetFactory   | 生成 DataSet 实例       | `() => DataSet`  | -      |
+| deps（可选）     | hook 更新所需要的依赖项 | `DependencyList` | -      |
+| cacheKey（可选） | 缓存的 key 值           | `string`         | -      |
 
 ### 返回值
 
