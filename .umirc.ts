@@ -32,5 +32,9 @@ export default defineConfig({
       'choerodon-ui',
     ],
   ],
+  theme: {
+    '@primary-color': '#0840f8',
+    '@c-primary': '#0840f8',
+  },
   // more config: https://d.umijs.org/config
 });
