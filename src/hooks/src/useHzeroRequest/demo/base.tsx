@@ -9,18 +9,22 @@ function getUsername(): Promise<string> {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve('1111');
-    }, 1000);
+    }, 3000);
   });
 }
 
 export default () => {
-  const { data, error, loading } = useHzeroRequest(getUsername);
+  const { data, isError, isLoading, status } = useHzeroRequest(getUsername);
 
-  if (error) {
-    return <div>failed to load</div>;
+  if (isError) {
+    return <div>{status} to load</div>;
   }
-  if (loading) {
-    return <div>loading...</div>;
+  if (isLoading) {
+    return <div>{status}...</div>;
   }
-  return <div>Username: {data}</div>;
+  return (
+    <div>
+      Username: {data} Status: {status}
+    </div>
+  );
 };
