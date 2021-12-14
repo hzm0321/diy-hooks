@@ -1,6 +1,6 @@
 {
   "name": "diy-hooks",
-  "version": "1.0.13",
+  "version": "1.0.0",
   "description": "一个自定义 React Hooks 库。",
   "main": "./lib/index.js",
   "module": "./es/index.js",
@@ -22,12 +22,9 @@
     "package.json",
     "README.md"
   ],
-  "repository": "https://github.com/hzm0321/diy-hooks",
-  "homepage": "https://hzm0321.github.io/diy-hooks/",
-  "author": "hzm",
+  "author": "diy-hooks",
   "license": "ISC",
   "peerDependencies": {
-    "choerodon-ui": "*",
     "react": "^16.8.6 || ^17.0"
   },
   "devDependencies": {
@@ -43,9 +40,5 @@
     "rollup-plugin-typescript2": "^0.31.0"
   },
   "dependencies": {
-    "@ahooksjs/use-request": "^2.8.13",
-    "jinrishici": "^1.0.6",
-    "lodash": "^4.17.21",
-    "react-fast-compare": "^3.2.0"
   }
 }

@@ -11,7 +11,6 @@ export default defineConfig({
   favicon: './logo.svg',
   logo: './logo.svg',
   outputPath: 'docs-dist',
-  styles: [`.icon-link:before{content: '' !important;}`], // 强制覆盖 c7n icon 中 icon-link 样式
   extraBabelPlugins: [
     [
       'babel-plugin-import',
@@ -21,15 +20,6 @@ export default defineConfig({
         style: true,
       },
       'antd',
-    ],
-    [
-      'babel-plugin-import',
-      {
-        libraryName: 'choerodon-ui/pro',
-        libraryDirectory: 'es',
-        style: true,
-      },
-      'choerodon-ui',
     ],
   ],
   theme: {

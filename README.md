@@ -1,69 +1,63 @@
+---
+title: 使用指南
+order: 0
+---
+
 <div align="center">
-<h1>diy-hooks</h1>
-   <a href="https://www.npmjs.com/package/diy-hooks">
-      <img src="https://img.shields.io/npm/v/diy-hooks.svg" alt="npm package" />
+<h1>diy-hooks-cli</h1>
+   <a href="https://www.npmjs.com/package/diy-hooks-cli">
+      <img src="https://img.shields.io/npm/v/diy-hooks-cli.svg" alt="npm package" />
    </a>
-   <a href="https://www.npmjs.com/package/diy-hooks">
-      <img src="https://img.shields.io/npm/dm/diy-hooks.svg" alt="npm downloads" />
+   <a href="https://www.npmjs.com/package/diy-hooks-cli">
+      <img src="https://img.shields.io/npm/dm/diy-hooks-cli.svg" alt="npm downloads" />
    </a>
-   <a href="https://www.npmjs.com/package/diy-hooks">
-      <img src="https://img.shields.io/npm/l/diy-hooks.svg" alt="npm downloads" />
+   <a href="https://www.npmjs.com/package/diy-hooks-cli">
+      <img src="https://img.shields.io/npm/l/diy-hooks-cli.svg" alt="npm downloads" />
    </a>
-   <a href="https://github.com/hzm0321/diy-hooks">
-      <img src="https://img.shields.io/github/stars/hzm0321/diy-hooks?style=social" alt="npm downloads" />
+   <a href="https://github.com/hzm0321/diy-hooks-cli">
+      <img src="https://img.shields.io/github/stars/hzm0321/diy-hooks-cli?style=social" alt="npm downloads" />
    </a>
 </div>
 
 ## 介绍
 
-`diy-hooks` 库主要收录了平时业务开发中常用的自定义 React Hooks， 并且还包含 Hzero、C7N UI 项目使用的 hooks。
+`diy-hooks-cli` 是一个自定义 React Hooks 库脚手架。
 
-## 安装依赖
+## 快速开始
+
+### 安装
 
 ```shell
-$ yarn add diy-hooks
-# or
-$ npm install diy-hooks
+$ npm install diy-hooks-cli -g
 ```
 
-## 简单使用
+### 创建一个 hooks 库
 
-```ts
-import React from 'react';
-import { useMount } from 'diy-hooks';
-
-export default () => {
-  useMount(() => {
-    console.log('挂载了');
-  });
-
-  return <div>挂载</div>;
-};
+```shell
+$ diy-hooks-cli create your-hooks # 创建你的 hooks 库前端项目
+$ cd your-hooks # 查看生成的前端工程
 ```
 
-## 支持 TypeScript
+`注: 会在当前终端目录下以传入的 hooks 库名称, 生成一个文件夹`
 
-`diy-hooks`库导出了类型声明文件，可在 TS 项目中直接使用。
+### 添加一个自定义 hook
 
-## 按需加载
+在项目根目录下执行
 
-`diy-hooks` 默认支持基于 ES module 的 tree shaking。  
-直接写成 `import { useMount } from 'diy-hooks'` 就有按需加载效果。
+```shell
+$ diy-hooks-cli hook useYourHook group # 在 group 分组下创建 useYourHook
+```
 
-## 文档阅读说明
+在 `docs/group/` 目录下会创建 `useYourHook.md` 文件  
+在 `src/` 目录下会创建 `useYourHook` 文件夹, 并生成基础的自定义 hook 模板
 
-项目的文档库基于 [dumi](https://d.umijs.org/zh-CN) 搭建，并通过 [Github Pages](https://pages.github.com/) 部署在 [https://hzm0321.github.io/diy-hooks/](https://hzm0321.github.io/diy-hooks/) 。  
-可根据 hooks 类型分组，阅读此文档。每个分组都有一篇`简介`说明该分组下说包含的 hooks 概要，可据此查找对应 hook。
-如有疑问，请联系作者。  
-QQ：**934585316**  
-微信：**hzm0321hzm**
+## 指令
 
-## 国内镜像
-
-如果文档页面访问过慢，可以访问国内镜像站点[http://hzm0321.gitee.io/diy-hooks/](http://hzm0321.gitee.io/diy-hooks/)
-
-## 学习
-
-如果你也想从零开始构建一个像 `diy-hooks` 这样的 React Hooks 库，可以参考我的系列文章:
-
-- [从零开始构建一个属于自己的 React Hooks 库（一）](https://blog.csdn.net/PingMinWangZi/article/details/120237564)
+| 指令名称              | 说明                                           |
+| --------------------- | ---------------------------------------------- |
+| `create <name>`       | 创建 hooks 库前端工程                          |
+| `hook <name> <group>` | 在对应分组下创建一个 hook                      |
+| `-help -h`            | 查看帮助信息                                   |
+| `-version -v`         | 查看当前版本                                   |
+| `--git -g`            | 创建 hooks 库前端工程后, 执行初始化 `git` 操作 |
+| `--install -i`        | 创建 hooks 库前端工程后, 使用 `yarn` 安装依赖  |
